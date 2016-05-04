@@ -26,10 +26,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyq-a6-WHN">
                                 <rect key="frame" x="254" y="285" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZg-pi-cl7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpu-X1-hfR">
                                 <rect key="frame" x="251" y="43" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNO-MA-UYa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFH-jp-3D5">
                                 <rect key="frame" x="288" y="261" width="25" height="21"/>
@@ -50,6 +56,10 @@
                             <constraint firstItem="bff-Dp-Sg9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sDP-L8-ROQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="lFH-jp-3D5" id="8f5-24-na6"/>
+                        <outlet property="questionLabel" destination="bff-Dp-Sg9" id="JbR-fT-XiD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
